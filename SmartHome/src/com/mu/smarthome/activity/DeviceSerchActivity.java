@@ -99,6 +99,7 @@ public class DeviceSerchActivity extends BaseActivity implements
 					dentities = new ArrayList<DeviceEntity>();
 				}
 				if (rentities == null) {
+
 					rentities = new ArrayList<RoomEntity>();
 				}
 				deviceEntities.clear();
