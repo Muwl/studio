@@ -1,0 +1,2 @@
+include ':SmartHome'
+include ':appcompat_v7'
