@@ -58,7 +58,7 @@ public class TimeUtils {
 	}
 
 	/**
-	 * 将Date 转换�? yyyy-mm-dd输出
+	 * 将Date 转换 yyyy-mm-dd输出
 	 * 
 	 * @param date
 	 * @return
@@ -87,7 +87,7 @@ public class TimeUtils {
 	}
 
 	/**
-	 * 获取月和�?
+	 * 获取月和
 	 * 
 	 * @param date
 	 * @return
@@ -102,23 +102,7 @@ public class TimeUtils {
 	}
 
 	/**
-	 * 获取�?
-	 * 
-	 * @param date
-	 * @return
-	 */
-	public static String getMonthString(String date) {
-		LogManager.LogShow("date", date, LogManager.ERROR);
-		Date date2 = getDateByStr(date);
-		date = DATE_FORMAT_DATE.format(date2);
-		String year = date.substring(0, 4);
-		String month = date.substring(5, 7);
-		String day = date.substring(8);
-		return month + "�?" + "\n(" + year + ")";
-	}
-
-	/**
-	 * 获取当前时间的小�?
+	 * 获取当前时间的小
 	 * 
 	 * @return
 	 */

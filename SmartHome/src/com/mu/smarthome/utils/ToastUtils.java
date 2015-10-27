@@ -6,7 +6,7 @@ import android.widget.Toast;
 /**
  * @author Mu
  * @date 2014-11-7
- * @description Toast工具�??
+ * @description Toast工具
  */
 public class ToastUtils {
 	// 短Toast
@@ -38,7 +38,7 @@ public class ToastUtils {
 		if (context == null) {
 			return;
 		}
-		Toast.makeText(context, "网络连接失败，请�?查你的网络设�?", Toast.LENGTH_LONG).show();
+		Toast.makeText(context, "网络连接失败，请检查你的网络设置", Toast.LENGTH_LONG).show();
 	}
 
 	// 网络请求失败Toast

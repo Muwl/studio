@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.mu.smarthome.R;
+import com.mu.smarthome.utils.ToastUtils;
 import com.mu.smarthome.utils.ToosUtils;
 
 /**
@@ -59,6 +60,11 @@ public class SetNameDialog extends Dialog implements
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.addmark_dialog_ok:
+			if (ToosUtils.isTextEmpty(editText)){
+				ToastUtils.displayShortToast(context,"房间名称不能为空！");
+				return;
+			}
+
 			Message message = new Message();
 			message.what = 104;
 			message.arg1 = flag;

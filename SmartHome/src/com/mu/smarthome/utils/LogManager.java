@@ -37,7 +37,7 @@ public class LogManager {
 	public static final int WARN = 115;
 
 
-	/** 显示，打印日�? */
+	/** 显示，打印日 */
 	public static void LogShow(String Tag, String Message, int Style) {
 		if (!Constant.LOGOFF) {
 			switch (Style) {
