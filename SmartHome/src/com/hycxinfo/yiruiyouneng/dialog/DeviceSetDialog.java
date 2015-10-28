@@ -35,6 +35,7 @@ public class DeviceSetDialog implements OnClickListener {
 	private TextView cancel;
 	int height;
 	private TextView devswitch;
+	private TextView name;
 	private TextView locate;
 	private TextView declocate;
 	private TextView curpower;
@@ -54,12 +55,15 @@ public class DeviceSetDialog implements OnClickListener {
 		d.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		view = View.inflate(context, R.layout.dialog_deviceset, null);
 		d.setContentView(view);
+		name = (TextView) d.findViewById(R.id.deviceset_name);
 		devswitch = (TextView) d.findViewById(R.id.deviceset_switch);
 		locate = (TextView) d.findViewById(R.id.deviceset_locate);
 		declocate = (TextView) d.findViewById(R.id.deviceset_devicelocate);
 		curpower = (TextView) d.findViewById(R.id.deviceset_curpower);
 		standpower = (TextView) d.findViewById(R.id.deviceset_standpower);
 		cancel = (TextView) d.findViewById(R.id.deviceset_cancel);
+
+		name.setText(ToosUtils.getType(entity.type));
 
 		if (entity.running) {
 			devswitch.setText("打开");
