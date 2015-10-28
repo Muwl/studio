@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mu.smarthome.test">
+    package="com.hycxinfo.yiruiyouneng.test">
 
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.mu.smarthome"
+                     android:targetPackage="com.hycxinfo.yiruiyouneng"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.mu.smarthome"/>
+                     android:label="Tests for com.hycxinfo.yiruiyouneng"/>
 </manifest>

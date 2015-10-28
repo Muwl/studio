@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mu.smarthome"
+    package="com.hycxinfo.yiruiyouneng"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -23,13 +23,13 @@
     <uses-permission android:name="android.permission.GET_TASKS" />  
 
     <application
-        android:name="com.mu.smarthome.utils.MyApplication"
+        android:name=".utils.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.mu.smarthome.activity.MainActivity"
+            android:name="com.hycxinfo.yiruiyouneng.activity.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -41,31 +41,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mu.smarthome.activity.InductorActivity"
+            android:name="com.hycxinfo.yiruiyouneng.activity.InductorActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.mu.smarthome.activity.RoomSetActivity"
+            android:name="com.hycxinfo.yiruiyouneng.activity.RoomSetActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.mu.smarthome.activity.DeviceSerchActivity"
+            android:name="com.hycxinfo.yiruiyouneng.activity.DeviceSerchActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.mu.smarthome.activity.GatewayActivity"
+            android:name="com.hycxinfo.yiruiyouneng.activity.GatewayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
         </activity>
         <activity
-            android:name="com.mu.smarthome.activity.DeviceSetActivity"
+            android:name="com.hycxinfo.yiruiyouneng.activity.DeviceSetActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|keyboard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >

@@ -16,7 +16,7 @@
         android:textColor="#121212"
         android:textSize="@dimen/second_font" />
 
-    <com.mu.smarthome.view.MyListView
+    <com.hycxinfo.yiruiyouneng.view.MyListView
         android:id="@+id/inductor_item_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

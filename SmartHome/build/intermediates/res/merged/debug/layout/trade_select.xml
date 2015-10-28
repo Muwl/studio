@@ -23,7 +23,7 @@
         android:layout_height="1px"
         android:background="@color/ptime_lin" />
 
-    <com.mu.smarthome.view.ScrollerNumberPicker
+    <com.hycxinfo.yiruiyouneng.view.ScrollerNumberPicker
         android:id="@+id/trade_numberPicker"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
