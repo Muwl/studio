@@ -153,7 +153,7 @@ public class DeviceSetActivity extends BaseActivity implements OnClickListener {
                     ToastUtils.displayShortToast(DeviceSetActivity.this, "请输入设备名称");
                     return;
                 }
-                entities.get(position).name = deviceEntity.name;
+                entities.get(position).name = ToosUtils.getTextContent(name);
                 if (!ToosUtils.isTextEmpty(address)
                         && "未设置".equals(ToosUtils.getTextContent(address))) {
                     entities.get(position).location = "";

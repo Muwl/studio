@@ -7,6 +7,7 @@ import java.util.List;
 import com.hycxinfo.yiruiyouneng.activity.DeviceSerchActivity;
 import com.hycxinfo.yiruiyouneng.activity.InductorActivity;
 import com.hycxinfo.yiruiyouneng.activity.MainActivity;
+import com.hycxinfo.yiruiyouneng.model.DeviceEntity;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -29,6 +30,8 @@ public class MyApplication extends Application {
     private Connection connection;
 
     private boolean flag = true;
+
+
 
     private Handler handler = new Handler() {
         public void handleMessage(android.os.Message msg) {
@@ -94,6 +97,7 @@ public class MyApplication extends Application {
         applicationContext = this;
         instance = this;
         connection = new Connection(this);
+
         new Thread(new Runnable() {
 
             @Override
@@ -107,6 +111,7 @@ public class MyApplication extends Application {
                         LogManager.LogShow("-----", "全局查询------------",
                                 LogManager.ERROR);
                         try {
+
                             connection.searchDevices();
                             handler.sendEmptyMessage(777);
                         } catch (IOException e) {
