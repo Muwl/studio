@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values-sw600dp-v13/values-sw600dp-v13.xml -->
+    <!-- From: file:/D:/studio/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values-sw600dp-v13/values-sw600dp-v13.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height">56dip</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding">4dip</dimen>

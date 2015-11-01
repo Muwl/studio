@@ -42,6 +42,7 @@ import com.hycxinfo.yiruiyouneng.model.InductorEntity;
 import com.hycxinfo.yiruiyouneng.model.RoomEntity;
 import com.hycxinfo.yiruiyouneng.utils.Connection;
 import com.hycxinfo.yiruiyouneng.utils.DensityUtil;
+import com.hycxinfo.yiruiyouneng.utils.LogManager;
 import com.hycxinfo.yiruiyouneng.utils.ShareDataTool;
 import com.hycxinfo.yiruiyouneng.utils.ToastUtils;
 import com.hycxinfo.yiruiyouneng.utils.ToosUtils;
@@ -494,7 +495,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		}
 		gridEntities.removeAll(delEntities);
 		adapter.notifyDataSetChanged();
-
+		LogManager.LogShow("-----","MainActivity=====================",LogManager.ERROR);
 	}
 
 	public void onrefush() {

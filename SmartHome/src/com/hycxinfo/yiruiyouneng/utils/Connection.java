@@ -422,6 +422,7 @@ public class Connection {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         syncShortAddr(retStrArray);
         return;
 
@@ -500,9 +501,8 @@ public class Connection {
 
         }
 
-
-
         List<DeviceEntity> deviceEntities = ShareDataTool.getDevice(context);
+
         if (deviceEntities == null) {
             deviceEntities = new ArrayList<DeviceEntity>();
         }
@@ -514,11 +514,11 @@ public class Connection {
                 if (entities.get(i).longAddress
                         .equals(deviceEntities.get(j).longAddress)) {
                     flag = true;
-                    entities.get(i).shortAddress = deviceEntities.get(j).shortAddress;
-                    entities.get(i).type = deviceEntities.get(j).type;
-                    entities.get(i).running = deviceEntities.get(j).running;
-                    entities.get(i).waitting = deviceEntities.get(j).waitting;
-                    entities.get(i).currentPower = deviceEntities.get(j).currentPower;
+                    deviceEntities.get(i).shortAddress = entities.get(j).shortAddress;
+                    deviceEntities.get(i).type = entities.get(j).type;
+                    deviceEntities.get(i).running = entities.get(j).running;
+                    deviceEntities.get(i).waitting = entities.get(j).waitting;
+                    deviceEntities.get(i).currentPower = entities.get(j).currentPower;
                 }
             }
             //去重
@@ -532,8 +532,8 @@ public class Connection {
                 addEntities.add(entities.get(i));
             }
         }
-        entities.addAll(addEntities);
-        ShareDataTool.SaveDevice(context, entities);
+        deviceEntities.addAll(addEntities);
+        ShareDataTool.SaveDevice(context, deviceEntities);
 
     }
 

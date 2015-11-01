@@ -15,6 +15,7 @@ import com.hycxinfo.yiruiyouneng.adapter.InductorAdapter;
 import com.hycxinfo.yiruiyouneng.model.DeviceEntity;
 import com.hycxinfo.yiruiyouneng.model.InductorEntity;
 import com.hycxinfo.yiruiyouneng.model.RoomEntity;
+import com.hycxinfo.yiruiyouneng.utils.LogManager;
 import com.hycxinfo.yiruiyouneng.utils.ShareDataTool;
 import com.hycxinfo.yiruiyouneng.utils.ToosUtils;
 
@@ -127,6 +128,8 @@ public class InductorActivity extends BaseActivity {
 			}
 		}
 		adapter.notifyDataSetChanged();
+		LogManager.LogShow("-----", "InductorActivity=====================", LogManager.ERROR);
+
 
 
 	}

@@ -24,6 +24,7 @@ import com.hycxinfo.yiruiyouneng.model.RoomEntity;
 import com.hycxinfo.yiruiyouneng.model.TransferEntity;
 import com.hycxinfo.yiruiyouneng.oos.OSSAndroid;
 import com.hycxinfo.yiruiyouneng.utils.Connection;
+import com.hycxinfo.yiruiyouneng.utils.LogManager;
 import com.hycxinfo.yiruiyouneng.utils.ShareDataTool;
 import com.hycxinfo.yiruiyouneng.utils.ToastUtils;
 import com.hycxinfo.yiruiyouneng.utils.ToosUtils;
@@ -182,10 +183,13 @@ public class DeviceSerchActivity extends BaseActivity implements
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				Intent intent = new Intent(DeviceSerchActivity.this,
-						DeviceSetActivity.class);
-				intent.putExtra("position", position);
-				startActivity(intent);
+				if (position<deviceEntities.size()) {
+					Intent intent = new Intent(DeviceSerchActivity.this,
+							DeviceSetActivity.class);
+					intent.putExtra("position", position);
+					startActivity(intent);
+
+				}
 			}
 		});
 
@@ -194,13 +198,15 @@ public class DeviceSerchActivity extends BaseActivity implements
 			@Override
 			public boolean onItemLongClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				CustomeDialog customeDialog = new CustomeDialog(
-						DeviceSerchActivity.this, handler, "确定删除此设备？",
-						position, -888);
+                if (position < deviceEntities.size()) {
+                    CustomeDialog customeDialog = new CustomeDialog(
+                            DeviceSerchActivity.this, handler, "确定删除此设备？",
+                            position, -888);
 
-				return true;
-			}
-
+                    return true;
+                }
+                return  true;
+            }
 		});
 	}
 
@@ -222,13 +228,15 @@ public class DeviceSerchActivity extends BaseActivity implements
 			deviceEntities.add(deviceEntities1.get(i));
 		}
 		adapter.notifyDataSetChanged();
+
+		LogManager.LogShow("-----", "DeviceSerchActivity=====================", LogManager.ERROR);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 	}
-	
+
 
 	@Override
 	public void onClick(View v) {

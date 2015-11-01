@@ -4,4 +4,4 @@
     <item android:drawable="@color/item_press" android:state_pressed="true"></item>
     <item android:drawable="@color/white"></item>
 
-</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/item_bg.xml -->
+</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/item_bg.xml -->

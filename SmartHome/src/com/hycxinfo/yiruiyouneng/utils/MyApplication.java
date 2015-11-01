@@ -111,10 +111,9 @@ public class MyApplication extends Application {
                         LogManager.LogShow("-----", "全局查询------------",
                                 LogManager.ERROR);
                         try {
-
                             connection.searchDevices();
                             handler.sendEmptyMessage(777);
-                        } catch (IOException e) {
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
 

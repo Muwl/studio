@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/title_rig_press" android:state_pressed="true"></item>
     <item android:drawable="@drawable/title_rig_normal"></item>
 
-</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/title_rig_btn.xml -->
+</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/title_rig_btn.xml -->
