@@ -138,26 +138,30 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 				String longAddress = (String) msg.obj;
 				for (int i = 0; i < gridEntities.size(); i++) {
 					if (gridEntities.get(i).longAddress.equals(longAddress)) {
-						gridEntities.get(i).running = !gridEntities.get(i).running;
+						gridEntities.get(i).running = false;
 					}
 				}
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
+				setSwitch();
+
 				break;
 			case Connection.OPEN_SUCC:
 				pro.setVisibility(View.GONE);
 				String longAddress1 = (String) msg.obj;
 				for (int i = 0; i < gridEntities.size(); i++) {
 					if (gridEntities.get(i).longAddress.equals(longAddress1)) {
-						gridEntities.get(i).running = !gridEntities.get(i).running;
+						gridEntities.get(i).running = true;
 					}
 				}
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
+				setSwitch();
 				break;
 			case Connection.ERROR_CODE:
 				pro.setVisibility(View.GONE);
 				ToastUtils.displayShortToast(MainActivity.this, "操作失败！");
+				setSwitch();
 				break;
 
 			case Connection.OPENALL_SUCC:
@@ -173,6 +177,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 				}
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
+				setSwitch();
 				break;
 			case Connection.CLOSEALL_SUCC:
 				pro.setVisibility(View.GONE);
@@ -187,6 +192,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 				}
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
+				setSwitch();
 				break;
 
 			default:
@@ -495,6 +501,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		}
 		gridEntities.removeAll(delEntities);
 		adapter.notifyDataSetChanged();
+		setSwitch();
 		LogManager.LogShow("-----","MainActivity=====================",LogManager.ERROR);
 	}
 
@@ -602,6 +609,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			controlView.setVisibility(View.GONE);
 		}
 
+
 	}
 
 	private void setSwitch() {
@@ -646,11 +654,11 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 				if (!gridEntities.get(i).selected) {
 					continue;
 				}
-				if (switchFlag && !gridEntities.get(i).running) {
+//				if (switchFlag && !gridEntities.get(i).running) {
 					entities.add(gridEntities.get(i));
-				} else if (!switchFlag && !gridEntities.get(i).running) {
-					entities.add(gridEntities.get(i));
-				}
+//				} else if (!switchFlag && !gridEntities.get(i).running) {
+//					entities.add(gridEntities.get(i));
+//				}
 			}
 
 			if (entities.size() == 0) {

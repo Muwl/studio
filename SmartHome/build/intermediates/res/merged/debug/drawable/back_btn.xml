@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/back_press" android:state_pressed="true"></item>
     <item android:drawable="@drawable/back_normal"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/back_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/back_btn.xml -->

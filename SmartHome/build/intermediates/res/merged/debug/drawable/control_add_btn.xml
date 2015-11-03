@@ -4,4 +4,4 @@
     <item android:drawable="@color/add_press" android:state_pressed="true"></item>
     <item android:drawable="@color/add_normal"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/control_add_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/control_add_btn.xml -->

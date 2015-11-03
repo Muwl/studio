@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/tab_switch_off" android:state_checked="true"></item>
     <item android:drawable="@drawable/tab_switch_on"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/tab_switch_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/tab_switch_btn.xml -->

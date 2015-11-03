@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/edit_press" android:state_pressed="true"></item>
     <item android:drawable="@drawable/edit_normal"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/edit_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/edit_btn.xml -->

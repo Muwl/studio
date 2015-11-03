@@ -59,7 +59,8 @@ public class DeviceSerchAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         if (position < entities.size()) {
             ViewHolder holder = null;
-            if (convertView == null) {
+//            convertView=null;
+            if (convertView == null || (ViewHolder) convertView.getTag()==null) {
                 holder = new ViewHolder();
                 convertView = View.inflate(context,
                         R.layout.activity_diviceserch_item, null);

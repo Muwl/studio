@@ -4,4 +4,4 @@
     <item android:drawable="@color/btn_press" android:state_pressed="true"></item>
     <item android:drawable="@color/white"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/dialog_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/dialog_btn.xml -->

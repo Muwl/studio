@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/studio/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="actionBarDivider"/>
     <attr format="reference" name="actionBarItemBackground"/>
@@ -74,7 +74,7 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <!-- From: file:/D:/studio/studio/SmartHome/res/values/color.xml -->
+    <!-- From: file:/E:/studio/SmartHome/res/values/color.xml -->
     <eat-comment/>
     <color name="add_normal">#00bdff</color>
     <color name="add_press">#0495c8</color>
@@ -102,7 +102,7 @@
     <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/></declare-styleable>
     <declare-styleable name="Theme"><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="popupMenuStyle"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
-    <!-- From: file:/D:/studio/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height">48dip</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding">8dip</dimen>
@@ -125,13 +125,13 @@
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
-    <!-- From: file:/D:/studio/studio/SmartHome/res/values/dimens.xml -->
+    <!-- From: file:/E:/studio/SmartHome/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="first_font">17sp</dimen>
     <dimen name="second_font">16sp</dimen>
     <dimen name="thrid_font">14sp</dimen>
     <dimen name="title_font">20sp</dimen>
-    <!-- From: file:/D:/studio/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_menu_divider" type="id"/>
@@ -153,11 +153,11 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/D:/studio/studio/SmartHome/res/values/strings.xml -->
+    <!-- From: file:/E:/studio/SmartHome/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">亿瑞</string>
     <string name="hello_world">Hello world!</string>
-    <!-- From: file:/D:/studio/studio/SmartHome/res/values/styles.xml -->
+    <!-- From: file:/E:/studio/SmartHome/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
@@ -169,7 +169,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/D:/studio/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
+    <!-- From: file:/E:/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@android:color/primary_text_light</item>
@@ -928,7 +928,7 @@
     </style>
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Widget.AppCompat.Base.Spinner">
     </style>
-    <!-- From: file:/D:/studio/studio/SmartHome/res/values/styles.xml -->
+    <!-- From: file:/E:/studio/SmartHome/res/values/styles.xml -->
     <eat-comment/>
     <style name="dialog2" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>

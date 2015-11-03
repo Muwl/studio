@@ -99,6 +99,7 @@ public class Connection {
             @Override
             public void run() {
                 try {
+
                     openAllDevices(entities);
                     Message message = new Message();
                     message.what = OPENALL_SUCC;

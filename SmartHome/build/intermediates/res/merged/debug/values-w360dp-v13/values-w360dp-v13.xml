@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/studio/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values-w360dp-v13/values-w360dp-v13.xml -->
+    <!-- From: file:/E:/studio/SmartHome/build/intermediates/exploded-aar/studio/appcompat_v7/unspecified/res/values-w360dp-v13/values-w360dp-v13.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">3</integer>
 </resources>

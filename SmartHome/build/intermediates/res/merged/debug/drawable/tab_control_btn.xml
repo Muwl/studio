@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/tab_control_checked" android:state_checked="true"></item>
     <item android:drawable="@drawable/tab_control_normal"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/tab_control_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/tab_control_btn.xml -->

@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/check_checked" android:state_checked="true"></item>
     <item android:drawable="@drawable/check_normal"></item>
 
-</selector><!-- From: file:/D:/studio/studio/SmartHome/res/drawable/checked_btn.xml -->
+</selector><!-- From: file:/E:/studio/SmartHome/res/drawable/checked_btn.xml -->
