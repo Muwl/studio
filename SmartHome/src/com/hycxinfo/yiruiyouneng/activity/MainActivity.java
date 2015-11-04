@@ -140,6 +140,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 					if (gridEntities.get(i).longAddress.equals(longAddress)) {
 						gridEntities.get(i).running = false;
 					}
+					gridEntities.get(i).selected=false;
 				}
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
@@ -153,6 +154,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 					if (gridEntities.get(i).longAddress.equals(longAddress1)) {
 						gridEntities.get(i).running = true;
 					}
+					gridEntities.get(i).selected=false;
 				}
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
@@ -174,7 +176,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 							gridEntities.get(j).running = true;
 						}
 					}
+					gridEntities.get(j).selected=false;
 				}
+				allcheBox.setChecked(false);
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
 				setSwitch();
@@ -189,7 +193,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 							gridEntities.get(j).running = false;
 						}
 					}
+					gridEntities.get(j).selected=false;
 				}
+				allcheBox.setChecked(false);
 				ToastUtils.displayShortToast(MainActivity.this, "操作成功！");
 				adapter.notifyDataSetChanged();
 				setSwitch();

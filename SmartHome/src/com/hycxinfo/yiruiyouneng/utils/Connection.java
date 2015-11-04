@@ -123,18 +123,18 @@ public class Connection {
     public void closeAll(final List<DeviceEntity> entities, final Handler handler) {
         new Thread(new Runnable() {
 
-            @Override
-            public void run() {
-                try {
+                    @Override
+                    public void run() {
+                        try {
                     closeAllDevices(entities);
                     Message message = new Message();
                     message.what = CLOSEALL_SUCC;
                     message.obj = entities;
                     handler.sendMessage(message);
-                } catch (IOException | InterruptedException e) {
-                    e.printStackTrace();
-                    handler.sendEmptyMessage(ERROR_CODE);
-                }
+                        } catch (IOException | InterruptedException e) {
+                            e.printStackTrace();
+                            handler.sendEmptyMessage(ERROR_CODE);
+                        }
 
             }
         }).start();
