@@ -312,6 +312,7 @@ int drawable tab_switch_on 0x7f02008b
 int drawable title_rig_btn 0x7f02008c
 int drawable title_rig_normal 0x7f02008d
 int drawable title_rig_press 0x7f02008e
+int drawable welcome 0x7f02008f
 int id action_bar 0x7f0b001c
 int id action_bar_activity_content 0x7f0b0014
 int id action_bar_container 0x7f0b001b
@@ -498,12 +499,13 @@ int layout activity_main 0x7f030021
 int layout activity_roomset 0x7f030022
 int layout activity_roomset_item 0x7f030023
 int layout activity_title 0x7f030024
-int layout addmark_dialog 0x7f030025
-int layout custom_dialog 0x7f030026
-int layout dialog_deviceset 0x7f030027
-int layout pro 0x7f030028
-int layout support_simple_spinner_dropdown_item 0x7f030029
-int layout trade_select 0x7f03002a
+int layout activity_welcome 0x7f030025
+int layout addmark_dialog 0x7f030026
+int layout custom_dialog 0x7f030027
+int layout dialog_deviceset 0x7f030028
+int layout pro 0x7f030029
+int layout support_simple_spinner_dropdown_item 0x7f03002a
+int layout trade_select 0x7f03002b
 int string abc_action_bar_home_description 0x7f050000
 int string abc_action_bar_up_description 0x7f050001
 int string abc_action_menu_overflow_description 0x7f050002
