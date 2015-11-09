@@ -220,7 +220,7 @@ public class Connection {
     public Socket getSocket() throws IOException {
         GatewayEntity entity = ShareDataTool.getGateWay(context);
         if (entity == null || ToosUtils.isStringEmpty(entity.ipAddress)) {
-            return null;
+            throw new IOException("null");
         }
         Socket client = new Socket();
         InetSocketAddress socketAddress = new InetSocketAddress(
@@ -240,7 +240,7 @@ public class Connection {
     public void cancelControl() throws IOException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
         }
         byte[] bs = ConnectionHelper.getCommand(ConnectionHelper.CANCELCONTROL,
                 null);
@@ -259,7 +259,7 @@ public class Connection {
     public void openDevice(DeviceEntity deviceEntity) throws IOException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
         }
         byte[] bs = ConnectionHelper.getCommand(ConnectionHelper.OPEN,
                 deviceEntity);
@@ -280,7 +280,7 @@ public class Connection {
             InterruptedException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
         }
         for (int i = 0; i < entities.size(); i++) {
             byte[] bs = ConnectionHelper.getCommand(ConnectionHelper.OPEN,
@@ -308,7 +308,7 @@ public class Connection {
             InterruptedException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
         }
         for (int i = 0; i < entities.size(); i++) {
             byte[] bs = ConnectionHelper.getCommand(ConnectionHelper.CLOSE,
@@ -334,7 +334,7 @@ public class Connection {
     public void closeDevice(DeviceEntity deviceEntity) throws IOException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
         }
         byte[] bs = ConnectionHelper.getCommand(ConnectionHelper.CLOSE,
                 deviceEntity);
@@ -353,7 +353,7 @@ public class Connection {
     public void searchDevices() throws IOException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
         }
         String retStrArray[] = new String[100];// 最多100个设备
         byte reclen[] = new byte[4];
@@ -547,7 +547,8 @@ public class Connection {
     public void startFindGatewayId() throws IOException {
         Socket client = getSocket();
         if (client == null) {
-            return;
+            throw new IOException("null");
+
         }
         byte chars[] = new byte[1024];
         int index = 0;

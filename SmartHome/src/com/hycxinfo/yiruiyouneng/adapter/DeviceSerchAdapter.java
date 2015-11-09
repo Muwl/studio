@@ -131,9 +131,14 @@ public class DeviceSerchAdapter extends BaseAdapter {
                     noneNum++;
                 }
             }
+            if (gangedswitchNum!=0){
+                gangedswitchNum=(gangedswitchNum/2);
+            }
+
+
 
             StringBuffer stringBuffer = new StringBuffer();
-            stringBuffer.append("设备总数:" + entities.size() + "\u2000");
+            stringBuffer.append("设备总数:" + (entities.size()-gangedswitchNum) + "\u2000");
             if (outletNum != 0) {
                 stringBuffer.append("插座:" + outletNum + "\u2000");
             }
