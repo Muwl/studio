@@ -515,11 +515,11 @@ public class Connection {
                 if (entities.get(i).longAddress
                         .equals(deviceEntities.get(j).longAddress)) {
                     flag = true;
-                    deviceEntities.get(i).shortAddress = entities.get(j).shortAddress;
-                    deviceEntities.get(i).type = entities.get(j).type;
-                    deviceEntities.get(i).running = entities.get(j).running;
-                    deviceEntities.get(i).waitting = entities.get(j).waitting;
-                    deviceEntities.get(i).currentPower = entities.get(j).currentPower;
+                    deviceEntities.get(j).shortAddress = entities.get(i).shortAddress;
+                    deviceEntities.get(j).type = entities.get(i).type;
+                    deviceEntities.get(j).running = entities.get(i).running;
+                    deviceEntities.get(j).waitting = entities.get(i).waitting;
+                    deviceEntities.get(j).currentPower = entities.get(i).currentPower;
                 }
             }
             //去重

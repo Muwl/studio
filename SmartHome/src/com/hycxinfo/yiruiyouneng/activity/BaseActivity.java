@@ -7,6 +7,7 @@ import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 
 import com.hycxinfo.yiruiyouneng.utils.MyApplication;
+import com.umeng.analytics.MobclickAgent;
 
 /**
  * @author Mu
@@ -29,11 +30,15 @@ public class BaseActivity extends FragmentActivity {
 
 	protected void onResume() {
 		super.onResume();
+		MobclickAgent.onResume(this);
+		MobclickAgent.onPageStart("SplashScreen");
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
+		MobclickAgent.onPause(this);
+		MobclickAgent.onPageEnd("SplashScreen");
 		if (imm != null && getCurrentFocus() != null
 				&& getCurrentFocus().getWindowToken() != null) {
 			imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),

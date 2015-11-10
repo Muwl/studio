@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="E:\studio\SmartHome\libs\oss-android-sdk-1.4.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="c12f78302c593db70107f207f40d754969ef1057">
-        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\oss-android-sdk-1.4.0-732f684a16a3640f17e5ec75c7f0993a9000a3a3.jar" />
-    </item>
-    <item
         jar="E:\studio\SmartHome\build\intermediates\exploded-aar\studio\appcompat_v7\unspecified\jars\libs\android-support-v4.jar"
         jumboMode="false"
         revision="20.0.0"
@@ -16,11 +9,18 @@
         <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\android-support-v4-e9cccaf6ecaec2dbb765e3a3cc2177356272979b.jar" />
     </item>
     <item
-        jar="E:\studio\SmartHome\libs\okio-1.6.0.jar"
+        jar="E:\studio\SmartHome\libs\oss-android-sdk-1.4.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\okio-1.6.0-e4cf4a7cdba5cca09d1fb3dc902973bf9ec184cb.jar" />
+        sha1="c12f78302c593db70107f207f40d754969ef1057">
+        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\oss-android-sdk-1.4.0-732f684a16a3640f17e5ec75c7f0993a9000a3a3.jar" />
+    </item>
+    <item
+        jar="E:\studio\SmartHome\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\gson-2.2.4-64be947824152c0ce8dd4bab51f054e4c6570660.jar" />
     </item>
     <item
         jar="E:\studio\SmartHome\libs\okhttp-apache-2.5.0.jar"
@@ -30,11 +30,11 @@
         <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\okhttp-apache-2.5.0-f1942ef9e68ec63a334ee62c9d331c329258a314.jar" />
     </item>
     <item
-        jar="E:\studio\SmartHome\libs\okhttp-2.5.0.jar"
+        jar="E:\studio\SmartHome\build\intermediates\exploded-aar\studio\appcompat_v7\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
-        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\okhttp-2.5.0-52f004f6def2e9d7bcfb5e3202633f7fff534a36.jar" />
+        sha1="3d02d02d73304c5a69104144f43d51961aeae88d">
+        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\classes-d321b95efef4f3e647cbca8e48ba1787b5539de9.jar" />
     </item>
     <item
         jar="E:\studio\SmartHome\build\intermediates\exploded-aar\studio\appcompat_v7\unspecified\jars\libs\android-support-v7-appcompat.jar"
@@ -44,18 +44,25 @@
         <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\android-support-v7-appcompat-598a0106a2284e6e1129181649e61596267678a4.jar" />
     </item>
     <item
-        jar="E:\studio\SmartHome\build\intermediates\exploded-aar\studio\appcompat_v7\unspecified\jars\classes.jar"
+        jar="E:\studio\SmartHome\libs\okio-1.6.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="3d02d02d73304c5a69104144f43d51961aeae88d">
-        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\classes-d321b95efef4f3e647cbca8e48ba1787b5539de9.jar" />
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\okio-1.6.0-e4cf4a7cdba5cca09d1fb3dc902973bf9ec184cb.jar" />
     </item>
     <item
-        jar="E:\studio\SmartHome\libs\gson-2.2.4.jar"
+        jar="E:\studio\SmartHome\libs\okhttp-2.5.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
-        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\gson-2.2.4-64be947824152c0ce8dd4bab51f054e4c6570660.jar" />
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\okhttp-2.5.0-52f004f6def2e9d7bcfb5e3202633f7fff534a36.jar" />
+    </item>
+    <item
+        jar="E:\studio\SmartHome\libs\umeng-analytics-v5.6.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b2705cbb19f52bb4d242458163a98d9e889c1292">
+        <dex dex="E:\studio\SmartHome\build\intermediates\pre-dexed\debug\umeng-analytics-v5.6.1-ccb539ac4574f8d817f00afb0796b5a4c9fd1a31.jar" />
     </item>
 
 </items>

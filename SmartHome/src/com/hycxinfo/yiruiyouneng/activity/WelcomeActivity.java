@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.hycxinfo.yiruiyouneng.R;
+import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by Mu on 2015/11/4.
@@ -14,6 +15,7 @@ public class WelcomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        MobclickAgent.updateOnlineConfig(this);
         new Thread(new Runnable() {
             @Override
             public void run() {
