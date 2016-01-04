@@ -46,6 +46,35 @@ public class ShareDataTool {
 				.getString("gateId", "");
 	}
 
+
+	/**
+	 * 保存网关断开或连接  0 连接 1断开
+	 *
+	 * @param context
+	 * @return
+	 */
+	public static boolean SaveState(Context context, int gatestate) {
+		SharedPreferences sp = context.getSharedPreferences("sp",
+				Context.MODE_PRIVATE);
+		Editor e = sp.edit();
+		e.putInt("gatestate", gatestate);
+		return e.commit();
+	}
+
+	/**
+	 * 获取网关断开或连接  0 连接 1断开
+	 *
+	 * @param context
+	 * @return
+	 */
+	public static int getState(Context context) {
+
+		return context.getSharedPreferences("sp", Context.MODE_PRIVATE)
+				.getInt("gatestate",0);
+	}
+
+
+
 	/**
 	 * 保存房间列表
 	 * 
@@ -152,4 +181,6 @@ public class ShareDataTool {
 		GatewayEntity entity = gson.fromJson(s, GatewayEntity.class);
 		return entity;
 	}
+
+
 }

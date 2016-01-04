@@ -14,6 +14,7 @@ public class DeviceEntity implements Serializable {
 	public boolean running;
 	public boolean waitting;
 	public boolean selected;
+	public boolean disable;
 	public String name;
 	public String onIcon;
 	public String location;
@@ -21,17 +22,15 @@ public class DeviceEntity implements Serializable {
 	public String currentPower;
 	public String standbyPower;
 	public String roomId;
-	public DeviceEntity(String longAddress, String shortAddress, String type,
-			boolean running, boolean waitting, boolean selected, String name,
-			String onIcon, String location, String controlLocation,
-			String currentPower, String standbyPower, String roomId) {
-		super();
+
+	public DeviceEntity(String longAddress, String shortAddress, String type, boolean running, boolean waitting, boolean selected, boolean disable, String name, String onIcon, String location, String controlLocation, String currentPower, String standbyPower, String roomId) {
 		this.longAddress = longAddress;
 		this.shortAddress = shortAddress;
 		this.type = type;
 		this.running = running;
 		this.waitting = waitting;
 		this.selected = selected;
+		this.disable = disable;
 		this.name = name;
 		this.onIcon = onIcon;
 		this.location = location;
@@ -40,8 +39,7 @@ public class DeviceEntity implements Serializable {
 		this.standbyPower = standbyPower;
 		this.roomId = roomId;
 	}
-	
-	
+
 	public DeviceEntity() {
 		super();
 	}

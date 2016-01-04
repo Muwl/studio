@@ -120,6 +120,8 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
 	private boolean switchFlag = false;// true代表现在处于关闭状态 false 代表处于打开状态
 
+	private TextView gateBreak;
+
 	private Handler handler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
 			switch (msg.what) {
@@ -256,6 +258,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 		titleLayout = (LinearLayout) findViewById(R.id.main_tab2_title_lay);
 		layout = (LinearLayout) findViewById(R.id.main_tab2_lay);
 		mImageView = (ImageView) findViewById(R.id.main_tab2_bomimg);
+		gateBreak= (TextView) findViewById(R.id.main_break);
 
 		mViewPager = (ViewPager) findViewById(R.id.main_tab2_pager);
 
@@ -471,7 +474,28 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
 	}
 
+	//网关断开时
+	public void onOff(){
+		gateBreak.setVisibility(View.VISIBLE);
+		switchImageView.setClickable(false);
+		gridView.setEnabled(false);
+		gridView.setClickable(false);
+		allcheBox.setEnabled(false);
+
+	}
+
+	//网关连接
+	public void onOn(){
+		gateBreak.setVisibility(View.GONE);
+		switchImageView.setClickable(true);
+		gridView.setEnabled(true);
+		gridView.setClickable(true);
+		allcheBox.setEnabled(true);
+
+	}
+
 	public void onSerchFush() {
+		onOn();
 		List<DeviceEntity> list = ShareDataTool.getDevice(this);
 		if (list == null) {
 			list = new ArrayList<DeviceEntity>();

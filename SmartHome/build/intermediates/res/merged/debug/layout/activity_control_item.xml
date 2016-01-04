@@ -30,12 +30,23 @@
             android:gravity="center"
             android:orientation="vertical" >
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/control_item_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/device_bulb_normal" />
+                <ImageView
+                    android:id="@+id/control_item_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:src="@drawable/div_disable" />
 
+            </RelativeLayout>
             <TextView
                 android:id="@+id/control_item_name"
                 android:layout_width="wrap_content"

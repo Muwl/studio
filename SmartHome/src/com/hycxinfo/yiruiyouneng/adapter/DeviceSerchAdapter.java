@@ -101,7 +101,7 @@ public class DeviceSerchAdapter extends BaseAdapter {
             }
 
             holder.image.setImageResource(ToosUtils.getDrawable(
-                    entities.get(position).type, entities.get(position).running));
+                    entities.get(position).type, entities.get(position).running, entities.get(position).disable));
             return convertView;
         } else {
             convertView = View.inflate(context, R.layout.activity_diviceserch_item_bom, null);

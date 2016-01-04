@@ -238,10 +238,26 @@ public class DeviceSerchActivity extends BaseActivity implements
         LogManager.LogShow("-----", "DeviceSerchActivity=====================", LogManager.ERROR);
     }
 
+    public void onOn(){
+        serch.setClickable(true);
+        serch.setEnabled(true);
+        serch.setText("搜索设备");
+    }
+
+    public void onOff(){
+        serch.setClickable(false);
+        serch.setEnabled(false);
+        serch.setText("网关断开");
+    }
 
     @Override
     protected void onResume() {
         super.onResume();
+        if (ShareDataTool.getState(this)==1){
+            onOff();
+        }else{
+            onOn();
+        }
     }
 
 

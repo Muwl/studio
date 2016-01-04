@@ -76,10 +76,13 @@ public class ToosUtils {
 		}
 	}
 
-	public static int getDrawable(String type, boolean run) {
+	public static int getDrawable(String type, boolean run,boolean disable) {
 		switch (type) {
 		case "01":
 			// 插座
+			if (!disable){
+				return R.drawable.device_socket_normal;
+			}
 			if (run) {
 				return R.drawable.device_socket_press;
 			} else {
@@ -88,6 +91,9 @@ public class ToosUtils {
 
 		case "02":
 			// 空调
+			if (!disable){
+				return R.drawable.device_airconditioning_normal;
+			}
 			if (run) {
 				return R.drawable.device_airconditioning_press;
 			} else {
@@ -95,6 +101,9 @@ public class ToosUtils {
 			}
 		case "03":
 			// 红外
+			if (!disable){
+				return R.drawable.sensor_off;
+			}
 			if (run) {
 				return R.drawable.sensor_on;
 			} else {
@@ -102,6 +111,9 @@ public class ToosUtils {
 			}
 		case "04":
 			// 复合开关
+			if (!disable){
+				return R.drawable.device_lightgroup_normal;
+			}
 			if (run) {
 				return R.drawable.device_lightgroup_press;
 			} else {
@@ -109,6 +121,9 @@ public class ToosUtils {
 			}
 		case "05":
 			// 双联开关
+			if (!disable){
+				return R.drawable.device_lightgroup_normal;
+			}
 			if (run) {
 				return R.drawable.device_lightgroup_press;
 			} else {
@@ -116,6 +131,9 @@ public class ToosUtils {
 			}
 		case "06":
 			// 单联开关
+			if (!disable){
+				return R.drawable.device_bulb_normal;
+			}
 			if (run) {
 				return R.drawable.device_bulb_press;
 			} else {

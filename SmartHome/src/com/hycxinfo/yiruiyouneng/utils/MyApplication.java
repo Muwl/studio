@@ -37,6 +37,7 @@ public class MyApplication extends Application {
         public void handleMessage(android.os.Message msg) {
             switch (msg.what) {
                 case 777:
+                    ShareDataTool.SaveState(instance,0);
                     for (int i = 0; i < list.size(); i++) {
                         if (list.get(i) != null
                                 && list.get(i).getClass()
@@ -47,9 +48,26 @@ public class MyApplication extends Application {
                                 && list.get(i).getClass()
                                 .equals(DeviceSerchActivity.class)) {
                             ((DeviceSerchActivity) (list.get(i))).refush();
+                            ((DeviceSerchActivity) (list.get(i))).onOn();
                         }
                         if (list.get(i) != null && list.get(i).getClass().equals(InductorActivity.class)) {
                             ((InductorActivity) (list.get(i))).refush();
+                        }
+
+                    }
+                    break;
+                case 567:
+                    ShareDataTool.SaveState(instance,1);
+                    for (int i = 0; i < list.size(); i++) {
+                        if (list.get(i) != null
+                                && list.get(i).getClass()
+                                .equals(MainActivity.class)) {
+                            ((MainActivity) (list.get(i))).onOff();
+                        }
+                        if (list.get(i) != null
+                                && list.get(i).getClass()
+                                .equals(DeviceSerchActivity.class)) {
+                            ((DeviceSerchActivity) (list.get(i))).onOff();
                         }
 
                     }
@@ -114,6 +132,9 @@ public class MyApplication extends Application {
                             connection.searchDevices();
                             handler.sendEmptyMessage(777);
                         } catch (Exception e) {
+                            LogManager.LogShow("-----", "网关断开------------",
+                                    LogManager.ERROR);
+                            handler.sendEmptyMessage(567);
                             e.printStackTrace();
                         }
 
