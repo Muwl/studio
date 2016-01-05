@@ -90,7 +90,7 @@ public class ControlAdapter extends BaseAdapter {
 
 
 
-        if (entities.get(position).disable){
+        if (!entities.get(position).disable){
             holder.dis.setVisibility(View.GONE);
             holder.root.setClickable(false);
         }else{

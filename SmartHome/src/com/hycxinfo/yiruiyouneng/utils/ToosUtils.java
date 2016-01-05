@@ -80,7 +80,7 @@ public class ToosUtils {
 		switch (type) {
 		case "01":
 			// 插座
-			if (!disable){
+			if (disable){
 				return R.drawable.device_socket_normal;
 			}
 			if (run) {
@@ -91,7 +91,7 @@ public class ToosUtils {
 
 		case "02":
 			// 空调
-			if (!disable){
+			if (disable){
 				return R.drawable.device_airconditioning_normal;
 			}
 			if (run) {
@@ -101,7 +101,7 @@ public class ToosUtils {
 			}
 		case "03":
 			// 红外
-			if (!disable){
+			if (disable){
 				return R.drawable.sensor_off;
 			}
 			if (run) {
@@ -111,7 +111,7 @@ public class ToosUtils {
 			}
 		case "04":
 			// 复合开关
-			if (!disable){
+			if (disable){
 				return R.drawable.device_lightgroup_normal;
 			}
 			if (run) {
@@ -121,7 +121,7 @@ public class ToosUtils {
 			}
 		case "05":
 			// 双联开关
-			if (!disable){
+			if (disable){
 				return R.drawable.device_lightgroup_normal;
 			}
 			if (run) {
@@ -131,7 +131,7 @@ public class ToosUtils {
 			}
 		case "06":
 			// 单联开关
-			if (!disable){
+			if (disable){
 				return R.drawable.device_bulb_normal;
 			}
 			if (run) {

@@ -34,6 +34,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.hycxinfo.yiruiyouneng.R;
 import com.hycxinfo.yiruiyouneng.adapter.ControlAdapter;
 import com.hycxinfo.yiruiyouneng.dialog.DeviceSetDialog;
@@ -384,7 +385,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 					adapter.notifyDataSetChanged();
 
 					setSwitch();
-				}
+			}
 			}
 		});
 
@@ -393,7 +394,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
 					int position, long arg3) {
-				if (ShareDataTool.getState(MainActivity.this)==0) {
+			if (ShareDataTool.getState(MainActivity.this)==0) {
 					DeviceSetDialog dialog = new DeviceSetDialog(MainActivity.this,
 							handler, gridEntities.get(position));
 				}
@@ -408,7 +409,9 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 					public void onCheckedChanged(CompoundButton arg0,
 							boolean flag) {
 						for (int j = 0; j < gridEntities.size(); j++) {
-							gridEntities.get(j).selected = flag;
+							if (gridEntities.get(j).disable) {
+								gridEntities.get(j).selected = flag;
+							}
 						}
 						adapter.notifyDataSetChanged();
 

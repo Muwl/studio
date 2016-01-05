@@ -129,6 +129,13 @@ public class MyApplication extends Application {
                         LogManager.LogShow("-----", "全局查询------------",
                                 LogManager.ERROR);
                         try {
+//                            List<DeviceEntity> list=ShareDataTool.getDevice(applicationContext);
+//                            for (int i=0;i<list.size();i++){
+//                                if (i%2==0){
+//                                    list.get(i).disable=true;
+//                                }
+//                            }
+//                            ShareDataTool.SaveDevice(applicationContext,list);
                             connection.searchDevices();
                             handler.sendEmptyMessage(777);
                         } catch (Exception e) {
