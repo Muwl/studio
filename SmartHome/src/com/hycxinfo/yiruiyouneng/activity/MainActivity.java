@@ -122,6 +122,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 
 	private TextView gateBreak;
 
+
 	private Handler handler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
 			switch (msg.what) {
@@ -377,11 +378,13 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				gridEntities.get(position).selected = !gridEntities
-						.get(position).selected;
-				adapter.notifyDataSetChanged();
+				if (ShareDataTool.getState(MainActivity.this)==0) {
+					gridEntities.get(position).selected = !gridEntities
+							.get(position).selected;
+					adapter.notifyDataSetChanged();
 
-				setSwitch();
+					setSwitch();
+				}
 			}
 		});
 
@@ -390,8 +393,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
 					int position, long arg3) {
-				DeviceSetDialog dialog = new DeviceSetDialog(MainActivity.this,
-						handler, gridEntities.get(position));
+				if (ShareDataTool.getState(MainActivity.this)==0) {
+					DeviceSetDialog dialog = new DeviceSetDialog(MainActivity.this,
+							handler, gridEntities.get(position));
+				}
 				return true;
 			}
 		});
@@ -478,7 +483,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	public void onOff(){
 		gateBreak.setVisibility(View.VISIBLE);
 		switchImageView.setClickable(false);
-		gridView.setEnabled(false);
+		//gridView.setEnabled(false);
 		gridView.setClickable(false);
 		allcheBox.setEnabled(false);
 
@@ -488,7 +493,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 	public void onOn(){
 		gateBreak.setVisibility(View.GONE);
 		switchImageView.setClickable(true);
-		gridView.setEnabled(true);
+		//gridView.setEnabled(true);
 		gridView.setClickable(true);
 		allcheBox.setEnabled(true);
 

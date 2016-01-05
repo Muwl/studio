@@ -528,6 +528,7 @@ public class Connection {
                     deviceEntities.get(j).running = entities.get(i).running;
                     deviceEntities.get(j).waitting = entities.get(i).waitting;
                     deviceEntities.get(j).currentPower = entities.get(i).currentPower;
+                    deviceEntities.get(j).disable = entities.get(i).disable;
                 }
             }
             //去重
