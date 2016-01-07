@@ -409,7 +409,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
 					public void onCheckedChanged(CompoundButton arg0,
 							boolean flag) {
 						for (int j = 0; j < gridEntities.size(); j++) {
-							if (gridEntities.get(j).disable) {
+							if (!gridEntities.get(j).disable) {
 								gridEntities.get(j).selected = flag;
 							}
 						}
