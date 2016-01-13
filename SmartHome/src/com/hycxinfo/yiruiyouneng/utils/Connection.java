@@ -458,7 +458,7 @@ public class Connection {
                 case Constant.TYPE_OUTLET:
                     String statue = result.substring(36, 38);
                     String engHex = result.substring(38, 44);
-                    String disable = result.substring(75, 77);
+                    String disable = result.substring(74,76);
                     deviceEntity.disable = disable.equals("E2");
                     deviceEntity.running = statue.equals("00");
                     deviceEntity.currentPower = engHex;
@@ -475,7 +475,7 @@ public class Connection {
                 case Constant.TYPE_COMBINATIONSWITCH:
                 case Constant.TYPE_SINGLESWITCH:
                     String statue2 = result.substring(36, 38);
-                    String disable2 = result.substring(75, 77);
+                    String disable2 = result.substring(74,76);
                     deviceEntity.disable = disable2.equals("E2");
                     deviceEntity.running = statue2.equals("00");
                     entities.add(deviceEntity);
@@ -483,7 +483,7 @@ public class Connection {
                 case Constant.TYPE_GANGEDSWITCH:
                     String statue3 = result.substring(36, 38);
                     String statue4 = result.substring(38, 40);
-                    String disable3 = result.substring(75, 77);
+                    String disable3 = result.substring(74,76);
 
                     DeviceEntity entity = new DeviceEntity();
                     entity.longAddress = hexDevid + "A";
